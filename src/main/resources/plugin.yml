@@ -1,0 +1,9 @@
+name: EliteMineParkour
+version: '${version}'
+main: me.verwelius.elitemineparkour.EliteMineParkour
+api-version: '1.19'
+commands:
+  menu:
+    description: Opens map choosing menu
+  map:
+    description: Transfers you to chosen map

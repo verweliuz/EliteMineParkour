@@ -1,0 +1,53 @@
+# Main World Name
+world: "world"
+
+
+# Component Messages
+messages:
+  syntax-error: "<dark_red>Ошибка в аргументах команды"
+  non-existent-map: "<dark_red>Указанной карты не существует"
+  command-for-players: "<dark_red>Эта команда предназначена только для игроков"
+  checkpoint-reached: |-
+    <dark_gray>--------------
+    
+    <white>Вы достигли чекпоинта
+    <white>Номер: <green>%n%
+
+    <dark_gray>--------------
+  parkour-started: |-
+    <dark_gray>--------------
+    
+    <white>Вы начали паркур
+    <white>Карта: %map%
+    
+    <dark_gray>--------------
+  parkour-finished: |-
+    <dark_gray>--------------
+    
+    <white>Карта: %map%
+    <white>Время: <green>%time% <white>секунд
+    
+    <dark_gray>--------------
+  map-menu-title: "Выбор <green>карты"
+
+
+# Sounds
+sounds:
+  command-error: "BLOCK_NOTE_BLOCK_BASS"
+  teleported: "ENTITY_ALLAY_ITEM_THROWN"
+  parkour-started: "ENTITY_EXPERIENCE_ORB_PICKUP"
+  parkour-finished: "ENTITY_EXPERIENCE_ORB_PICKUP"
+  checkpoint-reached: "BLOCK_NOTE_BLOCK_BELL"
+
+
+# Parkour Maps
+maps:
+  test:
+    icon: "GRASS_BLOCK"
+    name: "<green>Тестовое поле"
+    teleport: "89.5 111.0 27.5 0.0 20.0"
+    start-at: "89.5 112.5 30.5 0.0 20.0"
+    finish-at: "89.5 117.5 50.5"
+    checkpoints:
+      - "89.5 114.5 37.5 0.0 20.0"
+      - "86.5 116.5 43.5 -45.0 20.0"
